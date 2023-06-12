@@ -13,7 +13,7 @@ components.JS
 or
 componets.JSX in case I want to use JS and React mixed.
 
-**import React from "react";
+**import React from "react"; > This is only if with work with multiple tools, but if it is for only Components, it is not necesary in each .js file.
 
 > Lets start with the first functional container:
 
@@ -65,11 +65,26 @@ return (
       src={require('../imagenes/testimonio-emma.png')}
       alt='Foto de Emma' />
  <div className='contenedor-texto-testimonio'>
-  <p> className='nombre-testimonio'>Jose Arias from Colombia</p>
-  <p> className='cargo-testimonio'>Full Stack Web Develover</p>
-  <p> className='texto-testimonio'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  <p> className='nombre-testimonio'>**{props.name} from {props.country}</p>
+  <p> className='cargo-testimonio'>{props.career}</p>
+  <p> className='texto-testimonio'>{props.testimony}.</p>
   </div>
 </div>)
+}
+
+
+**After adding the props to each one, we need to creat in the main .js (app.js e.g) the props related to each one.
+
+function App() {
+return{
+<Testimonio 
+name=''
+country=''
+career=''
+testimony=''
+          
+/>
+}
 }
 
 
