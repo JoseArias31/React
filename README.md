@@ -53,6 +53,36 @@ return (
 
 **export default Testimonio;
 
+
+**PROPS
+Here, we use props to replace contect instead of copu a paste every component. 
+**
+funtion Testimonio(**props) {
+return (
+<div className='conetendor-testimonio'>
+ <img
+      className='imagen-testimonio'
+      src={require('../imagenes/testimonio-emma.png')}
+      alt='Foto de Emma' />
+ <div className='contenedor-texto-testimonio'>
+  <p> className='nombre-testimonio'>Jose Arias from Colombia</p>
+  <p> className='cargo-testimonio'>Full Stack Web Develover</p>
+  <p> className='texto-testimonio'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</div>)
+}
+
+
+
+
+
+
+
+
+
+
+
+
 **Example:Script to creat a component and render it**
 
 class MyComponent extends React.Component{
