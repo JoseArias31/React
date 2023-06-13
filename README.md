@@ -13,7 +13,25 @@ components.JS
 or
 componets.JSX in case I want to use JS and React mixed.
 
+
+**To open the website and see the development, in the terminal enter: 
+
+**cd and enter the folder we just created.
+npm start;
+
+**I strongly recommend to open the folder we just created before starting. 
+
 **import React from "react"; > This is only if with work with multiple tools, but if it is for only Components, it is not necesary in each .js file.
+
+**This is to make blank our website=
+**To start adding this content to our new Website, we need to remove "setupTest.js, reportWebVitals.js, App.test.js" from React.
+
+**From index.js we should delete "import reportWebVitals from './reportWebVitals' and reportWebVitals();
+
+**At App.js we will keep the <div ClassName="App"> </div> **And delete everything inside this Div.
+
+**At App.css we will delete everything inside not the file. 
+** On the App.css we can delete the styles. 
 
 > Lets start with the first functional container:
 
@@ -31,14 +49,7 @@ return (
   </div>
 </div>)
 }
-**This is to make blank our website=
-**To start adding this content to our new Website, we need to remove "setupTest.js, reportWebVitals.js, App.test.js" from React.
 
-**From index.js we should delete "import reportWebVitals from './reportWebVitals' and reportWebVitals();
-
-**At App.js we will keep the <div ClassName="App"> </div> **And delete everything inside this Div.
-
-**At App.css we will delete everything inside not the file. 
 
 **ONCE the component is ready, we need to import it from "App.js" like this:
 <div ClassName="App">
