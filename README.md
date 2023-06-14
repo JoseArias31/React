@@ -142,9 +142,24 @@ return(
   <bottom>
 )};
 
+ EVENT LISTENER: onClick={}
    
    
-
+   
+    function Bottom ({ text, bottomToClick, ClickHandler }){   (*The new parameter is to be used as an Event-Listener*)
+return(
+  <bottom 
+  classNamer="{bottomToClicl ? 'bottom-click' : 'bottom-reset'}"
+  onClick="{ClickHandler}">
+   {text}
+  <bottom>
+)};
+   
+**Do not forget to export the function:
+   
+   export dafault Bottom;
+   
+   
 
 
 **Example:Script to creat a component and render it**
