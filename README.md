@@ -100,8 +100,37 @@ testimony=''
 
 
 
+**CLICKS COUNTER**
 
+Note: There's a way to import images in React:
 
+import logo(We can add a ramdon name) from ./image-located.png
+
+function App(){
+return(
+<div>
+ <imag
+ src="{logo}" 
+ alt="Image"
+ />
+</div
+ )};
+ 
+**Remember, every new component JS. or JSX. file shoul have a:
+ 
+ import React from 'react';
+ 
+ **It's normal to use "props" for functions to call specific values, however, we can use "Destructuring assignment" which helps to connect with one parameter the value we want to call. 
+  
+  e.g:
+   
+   function Bottom ({ text }){
+return(
+ <bottom>
+  {text}
+  <bottom>
+ )
+        };
 
 
 
