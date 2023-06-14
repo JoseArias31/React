@@ -116,7 +116,7 @@ return(
 </div
  )};
  
-**Remember, every new component JS. or JSX. file shoul have a:
+**Remember, every new component JS. or JSX. file shoul have a:**
  
  import React from 'react';
  
@@ -132,9 +132,18 @@ return(
  )
         };
 
+**There'is something amazing with a className, we can create conditions to name it with a class depending on its funcionality:
+ 
+ 
+  function Bottom ({ text, bottomToClick }){   (*The new parameter added could work with conditions*)
+return(
+  <bottom classNamer="{bottomToClicl ? 'bottom-click' : 'bottom-reset'}">
+  {text}
+  <bottom>
+)};
 
-
-
+   
+   
 
 
 
