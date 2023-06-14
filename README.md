@@ -142,7 +142,7 @@ return(
   <bottom>
 )};
 
- EVENT LISTENER: onClick={}
+ **EVENT LISTENER: onClick={}
    
    
    
@@ -159,7 +159,36 @@ return(
    
    export dafault Bottom;
    
-   
+**HOOKS**
+
+In the main JS. file add the following importation:
+
+import { useState } from 'react';
+
+**Now, to apply to the useState to my values, we can do it following this step:
+
+const [numClics, setNumClics] = useState(0);
+
+-Set is to provide a default value to my new state which is 0.
+
+
+**INTERACTIVITY WITH BOTTOMS**
+
+
+-Click: 
+After setting up the "state" of my value, I can do JS to start counting my bottom:
+
+const manejarClic = () => {
+setNumClics(numClics + 1);
+}
+
+-Reset:
+
+const reiniciarContador = () => {
+
+}
+
+
 
 
 **Example:Script to creat a component and render it**
